@@ -7,19 +7,19 @@ void savename(char);
 int main(void)
 {
     srand(time(NULL));
-    printf("[—A“ü<1ˆÈ‰ºÉŽšˆÈŒ‹‘©Ÿ’öŽ®]\n");
+    printf("[â€”Aâ€œÃ¼<1Ë†Ãˆâ€°ÂºÂÃ‰Å½Å¡Ë†ÃˆÅ’â€¹â€˜Â©ÂÅ¸â€™Ã¶Å½Â®]\n");
     named();
 }
 
 void named(){
-    int i, j; //çšŸ—p
-    int ran_V, ran_C; //˜ªÉ—p
-    int num, num_real=0; //–¼Žš’·“xäo›‰Û’·“x
-    char *nme, *nme_real; //ç¬‹@¶¬–¼Žšäo›‰Û–¼Žš
+    int i, j; //Ã§ÂÅ¡Å¸â€”p
+    int ran_V, ran_C; //ËœÂªÂÃ‰â€”p
+    int num, num_real=0; //â€“Â¼Å½Å¡â€™Â·â€œxÃ¤oâ€ºâ€°ÂÃ›â€™Â·â€œx
+    char *nme, *nme_real; //Ã§Â¬â€¹@ÂÂ¶ÂÂ¬â€“Â¼Å½Å¡Ã¤oâ€ºâ€°ÂÃ›â€“Â¼Å½Å¡
     char NME_V[5] = {'a','e','i','o','u'};
     char NME_C[22] = {'b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z',NULL};
     while(1){
-        printf("–¼ŽšŽšßÉ:");
+        printf("â€“Â¼Å½Å¡Å½Å¡ÂÃŸÂÃ‰:");
         scanf("%d",&num);
         num*=2;
         if(num<1)
@@ -29,7 +29,7 @@ void named(){
             for(i=0;i<num;i++){
                 ran_V=(rand()%5);
                 ran_C=(rand()%22);
-                /*¶¬ç¬‹@–¼Žš*/
+                /*ÂÂ¶ÂÂ¬Ã§Â¬â€¹@â€“Â¼Å½Å¡*/
                 if(i%2==0)
                     *(nme+i)=NME_C[ran_C];
                 else
