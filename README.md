@@ -1,0 +1,1 @@
+# namae_generator
