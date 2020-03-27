@@ -7,19 +7,19 @@ void savename(char);
 int main(void)
 {
     srand(time(NULL));
-    printf("[—A“ü<1ˆÈ‰ºÉŽšˆÈŒ‹‘©Ÿ’öŽ®]\n");
+    printf("[輸入<1以下數字以結束此程式]\n");
     named();
 }
 
 void named(){
-    int i, j; //çšŸ—p
-    int ran_V, ran_C; //˜ªÉ—p
-    int num, num_real=0; //–¼Žš’·“xäo›‰Û’·“x
-    char *nme, *nme_real; //ç¬‹@¶¬–¼Žšäo›‰Û–¼Žš
+    int i, j; //迴圈用
+    int ran_V, ran_C; //亂數用
+    int num, num_real=0; //名字長度與實際長度
+    char *nme, *nme_real; //隨機生成名字與實際名字
     char NME_V[5] = {'a','e','i','o','u'};
     char NME_C[22] = {'b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z',NULL};
     while(1){
-        printf("–¼ŽšŽšßÉ:");
+        printf("名字字節數:");
         scanf("%d",&num);
         num*=2;
         if(num<1)
@@ -29,7 +29,7 @@ void named(){
             for(i=0;i<num;i++){
                 ran_V=(rand()%5);
                 ran_C=(rand()%22);
-                /*¶¬ç¬‹@–¼Žš*/
+                /*生成隨機名字*/
                 if(i%2==0)
                     *(nme+i)=NME_C[ran_C];
                 else
