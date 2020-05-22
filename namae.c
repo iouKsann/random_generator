@@ -3,7 +3,7 @@
 #include <time.h>
 void named();
 void savename(char);
-
+/*Hello*/
 int main(void)
 {
     srand(time(NULL));
